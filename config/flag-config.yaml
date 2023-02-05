@@ -5,6 +5,7 @@ new-admin-access:
     true_var: true
   defaultRule:
     percentage:
+      default_var: 0
       false_var: 70
       true_var: 30
 
