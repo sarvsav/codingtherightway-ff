@@ -1,9 +1,22 @@
-# 20% of the users will use the variation "my-new-feature"
-subscription-flag:
+new-admin-access:
   variations:
-    premium-users: true
-    free-users: false
+    default_var: false
+    false_var": false
+    true_var: true
   defaultRule:
     percentage:
-      premium-users: 10
-      free-users: 80
+      false_var: 70
+      true_var: 30
+
+flag-only-for-admin:
+  variations:
+    default_var: false
+    false_var": false
+    true_var: true
+  targeting:
+    - query: admin eq true
+      percentage:
+        false_var: 0
+        true_var: 100
+  defaultRule:
+    variation: Default
