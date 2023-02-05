@@ -2,7 +2,7 @@
 subscription-flag:
   variations:
     premium-users: true
-    free-users: true
+    free-users: false
   defaultRule:
     percentage:
       premium-users: 20
