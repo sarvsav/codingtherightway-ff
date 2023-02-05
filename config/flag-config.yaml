@@ -5,5 +5,5 @@ subscription-flag:
     free-users: false
   defaultRule:
     percentage:
-      premium-users: 20
+      premium-users: 10
       free-users: 80
