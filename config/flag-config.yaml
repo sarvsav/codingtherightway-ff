@@ -5,8 +5,8 @@ new-admin-access:
     true_var: true
   defaultRule:
     percentage:
-      false_var: 70
-      true_var: 30
+      false_var: 20
+      true_var: 80
 
 flag-only-for-admin:
   variations:
