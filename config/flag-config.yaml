@@ -1,0 +1,9 @@
+# 20% of the users will use the variation "my-new-feature"
+test-flag:
+  variations:
+    premium-users: true
+    free-users: true
+  defaultRule:
+    percentage:
+      premium-users: 20
+      free-users: 80
