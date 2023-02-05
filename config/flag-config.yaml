@@ -1,5 +1,5 @@
 # 20% of the users will use the variation "my-new-feature"
-test-flag:
+subscription-flag:
   variations:
     premium-users: true
     free-users: true
