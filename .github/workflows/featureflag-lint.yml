@@ -8,7 +8,7 @@ jobs:
       # To use this repository's private action,
       # you must check out the repository
       - name: Checkout
-        uses: sarvsav/go-feature-flag-lint-action@81838a2
+        uses: sarvsav/go-feature-flag-lint-action@81838a20bfbb0d5df0a89c95f33e96c50804d833
         id: hello          
         with:
           who-to-greet: 'codingtherightway'
