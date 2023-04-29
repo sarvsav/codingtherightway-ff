@@ -4,13 +4,16 @@ jobs:
   hello_world_job:
     runs-on: ubuntu-latest
     name: A job to say hello
+    defaults:
+      run:
+        working-directory: ./app
     steps:
       # To use this repository's private action,
       # you must check out the repository
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Hello world action step
-        uses: sarvsav/go-feature-flag-lint-action@c103e14470be0470155bd7128e3c1ea5f2624748
+        uses: sarvsav/go-feature-flag-lint-action@97c05d89ec53bda26f52e5c0990e3d14f254b438
         id: hello          
         with:
-          who-to-greet: 'codingtherightway'
+          config-root: '/home/runner/work/codingtherightway-ff/codingtherightway-ff'
