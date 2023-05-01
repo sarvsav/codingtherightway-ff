@@ -16,4 +16,4 @@ jobs:
         uses: sarvsav/go-feature-flag-lint-action@97c05d89ec53bda26f52e5c0990e3d14f254b438
         id: hello          
         with:
-          config-root: ${{ github.workspace }}/config
+          config-root: ${{ github.workspace }}
