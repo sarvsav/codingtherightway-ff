@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Hello world action step
-        uses: sarvsav/go-feature-flag-lint-action@97c05d89ec53bda26f52e5c0990e3d14f254b438
+        uses: go-feature-flag/gofeatureflag-lint-action@976cf3993e8b68c8103db2dd65388f19fedfe452
         id: hello          
         with:
           config-root: ${{ github.workspace }}
