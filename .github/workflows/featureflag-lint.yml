@@ -13,8 +13,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Hello world action step
-        uses: go-feature-flag/gofeatureflag-lint-action@eecf133b7129501054ff8b2397e13b05cc43aa8b
+        uses: go-feature-flag/gofeatureflag-lint-action@b9c8ba5a52fe5778635b9bda9a43c5bf21873d3e
         id: hello          
         with:
-          flagFilePath: ${{ github.workspace }}/config/flag-config.yaml
-          flagFiletype: 'yaml'
+          flag-file: ${{ github.workspace }}/config/flag-config.yaml
+          format: 'yaml'
