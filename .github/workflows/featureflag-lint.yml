@@ -16,5 +16,5 @@ jobs:
         uses: go-feature-flag/gofeatureflag-lint-action@30c0a2989d417ae21c5e46d98794ce9a6d4e655a
         id: hello          
         with:
-          configFilePath: ${{ github.workspace }}
+          configFilePath: ${{ github.workspace }}/config/flag-config.yaml
           configFiletype: 'yaml'
